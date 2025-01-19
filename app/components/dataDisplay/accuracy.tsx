@@ -65,7 +65,7 @@ const DataDisplay = (UserHandle: { userHandle: { userHandle: string } }) => {
   }
   if (loading || !data) {
     return (
-      <div className="p-6 bg-gray-50 rounded-xl shadow-lg space-y-6 animate-pulse">
+      <div className="p-6 w-full bg-gray-50 rounded-xl shadow-lg space-y-6 animate-pulse">
         <div className="h-8 bg-gray-300 rounded w-1/3"></div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
