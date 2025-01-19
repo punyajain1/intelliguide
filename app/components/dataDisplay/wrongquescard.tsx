@@ -15,14 +15,13 @@ import { Button } from "@/components/ui/button";
 import { ClickIcon } from "../icons/click";
 
 interface BackendResponse {
-  wrong: Record<
-    string,
-    {
+  wrong: {
+    [problemName: string]: {
       tags: string[];
       contestId: number;
       index: string;
-    }
-  >;
+    };
+  };
 }
 
 const WrongProblemsCard = ({ userHandle }: {
